@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Cebollita - Cebollitas Encurtidas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>La Cebollita</h1>
+        <p>¡Dale sabor a tu vida con nuestras cebollitas encurtidas!</p>
+        <button onclick="window.location.href='https://wa.me/50364558382'">Haz tu pedido por WhatsApp</button>
+    </header>
+
+    <section id="productos">
+        <h2>Nuestros Productos</h2>
+        <p>Elige el nivel de picante que más te guste:</p>
+        <ul>
+            <li><strong>Toque Ligero:</strong> Sabor equilibrado.</li>
+            <li><strong>Picosito:</strong> Picante moderado.</li>
+            <li><strong>Intenso:</strong> Picante fuerte.</li>
+        </ul>
+        <h3>Presentaciones</h3>
+        <p>Disponible en frascos de 8 oz y 16 oz.</p>
+        <button onclick="window.location.href='https://api.whatsapp.com/send/?phone=50364558382'">Pedir por
+            WhatsApp</button>
+
+    </section>
+
+    <section id="sobre-nosotros">
+        <h2>Sobre Nosotros</h2>
+        <p>Somos un emprendimiento dedicado a ofrecer cebollitas encurtidas de alta calidad, completamente caseras y sin
+            conservantes.</p>
+        <p>Elaboradas con ingredientes naturales: cebolla, vinagre blanco, chile habanero, chile jalapeño, sal y limón.
+        </p>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto / Pedidos</h2>
+        <p>Haz tu pedido llenando el siguiente formulario o contáctanos directamente por WhatsApp.</p>
+        <form action="procesar_pedido.php" method="POST">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="text" id="telefono" name="telefono" required>
+
+            <label for="producto">Elige tu producto:</label>
+            <select id="producto" name="producto">
+                <option value="8oz-toque-ligero">8 oz - Toque Ligero</option>
+                <option value="8oz-picosito">8 oz - Picosito</option>
+                <option value="8oz-intenso">8 oz - Intenso</option>
+                <option value="16oz-toque-ligero">16 oz - Toque Ligero</option>
+                <option value="16oz-picosito">16 oz - Picosito</option>
+                <option value="16oz-intenso">16 oz - Intenso</option>
+            </select>
+
+            <button type="submit">Enviar Pedido</button>
+        </form>
+    </section>
+</body>
+
+</html>
